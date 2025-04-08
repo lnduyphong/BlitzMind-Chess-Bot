@@ -1,55 +1,77 @@
+<div align="center">
 
-# INT2215 22 - 22028164
-# Hi 👋, I'm Duy Phong, you can call me Leo 
-- This is my first game with C++ and SDL, ChessAutoBot.
-#### Agenda
- - [Introduction](#introduction)
- - [Features](#features)
- - [How to play](#how-to-play)
+# ♟ BlitzMind – A Simple Yet Smart C++ Chess Game  
+[![C++](https://img.shields.io/badge/language-C%2B%2B17-blue.svg)](https://en.cppreference.com/w/cpp/17)
+[![SDL2](https://img.shields.io/badge/library-SDL2-ff69b4)](https://www.libsdl.org/)
+[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux-lightgrey)](https://github.com)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![Status](https://img.shields.io/badge/status-WIP-yellow.svg)](https://github.com)
+[![Game](https://img.shields.io/badge/genre-Chess-critical)](https://en.wikipedia.org/wiki/Computer_chess)
+</div>
 
 
-# Introduction
-- I make this chess game because I'm a big fan of chess.
-- The game was developed using C++ and SDL2
-- Sound effect: [Chess.com](https://www.chess.com/)
-- True type font: [Google Font](https://fonts.google.com)
-- The resources inspire from a spirit online shop but I have no money so I repainted it (I used Piskel if you want to know, definitely it's free)
-- Chess's original rule was completely remained.
-- Elo of my AI is about 1200 (play with online bot from chess.com or lichess.org)
+### 📋 Table of Contents
+- [Introduction](#-introduction)
+- [Features](#-features)
+- [How to Play](#-how-to-play)
+- [Credits](#-credits)
 
-# Features
-#### 1. MAIN MENU GAME
-- Select mode.
-- Turn on/off music.
-- Quit the game.
+---
 
-![App Screenshot](https://scontent.fhan15-1.fna.fbcdn.net/v/t1.15752-9/342074449_1489364921595907_535864974160950064_n.png?_nc_cat=101&ccb=1-7&_nc_sid=ae9488&_nc_ohc=7qq8KXpDF3gAX8VWexc&_nc_ht=scontent.fhan15-1.fna&oh=03_AdStjXbzMFzulJh7EjxJI9qklhBb8xClg34wAlhk8Hvgbg&oe=646DDC6B)
+## 🧠 Introduction
 
-#### 2. MENU SELECT MODE 
-- Play with bot 
-- 2 Players 
-- Back to  main menu
+I've always been a big fan of chess, so I decided to create my own version — *ChessAutoBot*. The game is developed with **C++** and **SDL2**, incorporating sound effects, custom UI, and an AI opponent based on **Minimax with Alpha-Beta Pruning**.
 
-![App Screenshot](https://scontent.fhan15-1.fna.fbcdn.net/v/t1.15752-9/342534627_773491480794525_5597501708234132866_n.png?_nc_cat=101&ccb=1-7&_nc_sid=ae9488&_nc_ohc=xh6kE0PNBboAX_h9kw-&_nc_ht=scontent.fhan15-1.fna&oh=03_AdRKfPwURhv3Rb_KVmtYVTXeZGZmSasNVa-mwHYZIlWNwQ&oe=646DEBC7)
+The AI is roughly equivalent to an **Elo 2000** and can evaluate up to **10 moves ahead**. While keeping the original chess rules intact, I also implemented advanced mechanics like **castling**, **en passant**, and **pawn promotion**.
 
-#### 3. BOARD
-- My game come with 2 modes: Play with bot and 2 players.
-- AI was developed base on Alpha Beta Prunning Algorithm from MiniMax Algorithm, the bot can assess five next moves.
-- My Chess integrated three modern rules like castle, enpassant, promote.
+All the sprites were custom-repainted by me using **Piskel** (yep, it’s free!), inspired by some designs I found online. And yes, I had to DIY because... student life 😅
 
-![App Screenshot](https://scontent.fhan15-2.fna.fbcdn.net/v/t1.15752-9/342390301_706262947959702_3287802554737759156_n.png?_nc_cat=104&ccb=1-7&_nc_sid=ae9488&_nc_ohc=yA5on3tT984AX_--Z5s&_nc_ht=scontent.fhan15-2.fna&oh=03_AdT_kPN7IOtU77SEpz6D_O_GUTxu0xErhlv_sJi0ZDuaiA&oe=646DF8BE)
+---
 
-# How to play 
-- Press the mouse and move to the lighten state to play.
+## ✨ Features
 
-![App Screenshot](https://scontent.fhan15-1.fna.fbcdn.net/v/t1.15752-9/342493225_166891996307098_4659116833407865454_n.png?_nc_cat=105&ccb=1-7&_nc_sid=ae9488&_nc_ohc=sxLdiH5yBYkAX9ZIZc1&_nc_ht=scontent.fhan15-1.fna&oh=03_AdSrEiKl5oqvVAwrvy4n6ZAqrNQIJJUNRUPwL96qQOX2Lw&oe=646DF4E0)
+### 🎮 Main Menu
+- Choose game mode
+- Toggle background music
+- Exit game  
 
-- Click 1 -> 4 to promote pawn.
+### 🧩 Game Modes
+- Play vs AI (bot)
+- Two-player local mode
+- Return to main menu
 
-![App Screenshot](https://scontent.fhan15-1.fna.fbcdn.net/v/t1.15752-9/342497857_609224671256835_2722590434123825710_n.png?_nc_cat=108&ccb=1-7&_nc_sid=ae9488&_nc_ohc=F2oiETCIB68AX9yL_zP&_nc_ht=scontent.fhan15-1.fna&oh=03_AdTFmZ6_oIh5SJEFcIt_wxzKJ_HHzUYWoLTjAtDgGAPA-Q&oe=646DDBA6)
+### ♟ Gameplay
+- Turn-based chess with visual guidance
+- AI engine using **Minimax + Alpha-Beta Pruning**
+- Full support for:
+  - Castling
+  - En passant
+  - Promotion (select 1–4 for Queen, Rook, Bishop, Knight)
+---
 
-- Press M to Muted/Unmuted
+## 🕹️ How to Play
 
-![App Screenshot](https://scontent.fhan15-2.fna.fbcdn.net/v/t1.15752-9/342565136_892500351820673_1998521600449763733_n.png?_nc_cat=111&ccb=1-7&_nc_sid=ae9488&_nc_ohc=CYjpCSKFaxkAX_9aQPw&_nc_ht=scontent.fhan15-2.fna&oh=03_AdTvapdv6bpOg7c0NrM9BY-AcJa6apGRza3lvEQ_4PdU7w&oe=64702E98)
+- **Move pieces**: Click and drag to the highlighted squares
+ 
+- **Promote pawn**: Press 1 → 4 to promote  
+  - 1 → Queen  
+  - 2 → Rook  
+  - 3 → Bishop  
+  - 4 → Knight  
 
-- Press Esc to back main menu
+- **Toggle Music**: Press `M`
+  
+- **Return to Menu**: Press `Esc`
+
+---
+
+## 🙌 Credits
+
+- **Sound effects** from [Chess.com](https://www.chess.com/)
+- **Fonts** from [Google Fonts](https://fonts.google.com)
+- **Sprites** drawn and edited using [Piskel](https://www.piskelapp.com/)
+
+---
+
+Thanks for checking out *BlitzMind*. Hope you enjoy playing it as much as I enjoyed building it!  
+Feel free to reach out if you want to talk more about C++, game dev, or chess ♟
